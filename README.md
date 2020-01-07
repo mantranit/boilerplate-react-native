@@ -34,7 +34,7 @@ npx react-native run-android
 ## React navigation[https://reactnavigation.org/docs/en/getting-started.html]
 ```
 yarn add react-navigation
-yarn add react-navigation-stack
+yarn add react-navigation-stack @react-native-community/masked-view
 yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context
 ```
 To complete the linking on iOS, make sure you have Cocoapods installed. Then run:

@@ -4,6 +4,13 @@ import { View, Text, Button, LogoTitle } from 'react-native';
 class ProfileScreen extends Component {
     static navigationOptions = {
         headerBackTitle: null,
+        headerRight: () => (
+          <Button
+            onPress={() => alert('This is a button!')}
+            title="Info"
+            color="#000"
+          />
+        ),
       };
     render() {
         // const {navigate} = this.props.navigation;
