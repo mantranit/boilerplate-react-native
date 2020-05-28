@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { View, TextInput } from 'react-native';
+import { View, Linking } from 'react-native';
 
 import { Button, Input, Avatar } from 'react-native-elements';
 import LayoutAuthComponent from '../../components/LayoutAuth';
 
-class SignInScreen extends Component {
+class SignUpScreen extends Component {
     static navigationOptions = {
-        title: 'Sign In',
+        title: 'Sign Up',
     };
     render() {
         return (
@@ -16,6 +16,12 @@ class SignInScreen extends Component {
                         <Avatar size={200} rounded={true} icon={{ name: 'home' }} />
                     </View>
                     <Input
+                        placeholder='First Name'
+                    />
+                    <Input
+                        placeholder='Last Name'
+                    />
+                    <Input
                         placeholder='Email'
                     />
                     <Input
@@ -23,13 +29,12 @@ class SignInScreen extends Component {
                         placeholder='Password'
                     />
                     <Button
-                        title="Login"
-                        onPress={() => this.props.navigation.navigate('Profile', {name: 'Jane'})}
+                        title="Create"
                     />
                     <Button
-                        title="Create an account"
+                        title="Already have an account?"
                         type="clear"
-                        onPress={() => this.props.navigation.navigate('SignUp', {})}
+                        onPress={() => this.props.navigation.navigate('SignIn', {})}
                     />
                 </View>
             </LayoutAuthComponent>
@@ -37,4 +42,4 @@ class SignInScreen extends Component {
     }
 }
 
-export default SignInScreen;
+export default SignUpScreen;

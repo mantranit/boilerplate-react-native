@@ -79,3 +79,11 @@ Then add the following at the top of your entry file, such as index.js or App.js
 ```
 import 'react-native-gesture-handler';
 ```
+## React native elements[https://react-native-elements.github.io/react-native-elements/docs/getting_started.html]
+```
+yarn add react-native-elements
+yarn add react-native-vector-icons
+
+# link
+react-native link react-native-vector-icons
+```

@@ -15,7 +15,7 @@ class ProfileScreen extends Component {
 	render() {
 		return (
 			<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-				<Text>Details Screen</Text>
+				<Text>ProfileScreen</Text>
 				<Button
 					title="Go back"
 					onPress={() => this.props.navigation.goBack()}

@@ -6,13 +6,15 @@ import HomeScreen from './screens/Home';
 import ProfileScreen from './screens/Profile';
 import AuthLoadingScreen from './screens/AuthLoading';
 import SignInScreen from './screens/SignIn';
+import SignUpScreen from './screens/SignUp';
 
 const AppStack = createStackNavigator({ 
     Home: HomeScreen,
     Profile: ProfileScreen,
 });
 const AuthStack = createStackNavigator({ 
-    SignIn: SignInScreen 
+    SignIn: SignInScreen,
+    SignUp: SignUpScreen,
 });
 
 const App = createAppContainer(createSwitchNavigator(
