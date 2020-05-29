@@ -13,7 +13,7 @@ class SignInScreen extends Component {
                     <TextInput name="password" />
                     <Button
                         title="Sign In"
-                        onPress={() => navigate('Profile', {name: 'Jane'})}
+                        onPress={() => this.props.navigation.navigate('Profile', {name: 'Jane'})}
                     />
                 </View>
             </SafeAreaView>
